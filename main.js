@@ -1,4 +1,5 @@
 let countPlayers = 0;
+const $arenas = document.querySelector(".arenas");
 
 const sonya = {
   name: "Sonya",
@@ -48,7 +49,6 @@ const createPlayer = (className, player) => {
     $player.appendChild($character);
     $character.appendChild($img);
 
-    const $arenas = document.querySelector(".arenas");
     $arenas.appendChild($player);
 
     countPlayers++;
